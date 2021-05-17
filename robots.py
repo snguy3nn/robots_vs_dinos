@@ -8,4 +8,7 @@ class Robot:
         self.health = 100
         self.weapon = Weapon("Rocket Launcher", 100)
 
-
+    def attack(self, dinosaur):
+        dinosaur.health -= self.weapon.attack_power
+        print(
+            f'{self.name} attacks {dinosaur.dino_type} with a {self.weapon.weapon_type} for {self.weapon.attack_power} damge. New health is {dinosaur.health}')
