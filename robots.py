@@ -1,11 +1,11 @@
-class Robot:
-    def __init__(self, name, weapon):
-        self.name = name
-        self.power_level = 10
-        self.health = 100
-        self.weapon = weapon
+from weapon import Weapon
 
-    def attack_dino(self):
-        print('Robot attacked Dino SUCCESSFULLY!')
-        self.
+
+class Robot:
+    def __init__(self, name):
+        self.name = name
+        self.power_level = 100
+        self.health = 100
+        self.weapon = Weapon("Rocket Launcher", 100)
+
 

@@ -1,3 +1,9 @@
+from dinos import Dinosaur
+
+
 class Herd:
     def __init__(self):
-        pass
+        self.dinosaurs = []
+        self.create_herd()
+
+
